@@ -1,0 +1,7 @@
+add_executable(ArborX_Example_DEM_Mesh_Interaction.exe example_dem.cpp)
+target_link_libraries(ArborX_Example_DEM_Mesh_Interaction.exe ArborX::ArborX)
+add_test(NAME ArborX_Example_DEM_Mesh_Interaction COMMAND ArborX_Example_DEM_Mesh_Interaction.exe)
+
+add_executable(ArborX_Example_DEM_Triangle_Contact.exe example_dem_triangle_contact.cpp)
+target_link_libraries(ArborX_Example_DEM_Triangle_Contact.exe ArborX::ArborX)
+add_test(NAME ArborX_Example_DEM_Triangle_Contact COMMAND ArborX_Example_DEM_Triangle_Contact.exe)
